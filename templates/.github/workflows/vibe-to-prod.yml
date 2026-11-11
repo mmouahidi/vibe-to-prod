@@ -1,0 +1,24 @@
+name: Vibe-to-Prod Gate
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install exact dependencies
+        run: npm ci --ignore-scripts
+      - name: Guardrails + actual checks
+        run: node .v2p/bin/v2p.mjs gate
+      # Enable if your npm lockfile and registry access support it:
+      # - name: Dependency vulnerability audit
+      #   run: node .v2p/bin/v2p.mjs gate --audit
+# SECURITY: Review third-party action SHAs and dependency install scripts for your threat model.

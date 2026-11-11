@@ -1,0 +1,12 @@
+---
+description: Non-negotiable engineering standards for Vibe-to-Prod
+alwaysApply: true
+---
+
+Read AGENTS.md and CONSTRAINTS.md before substantial changes.
+For existing app repairs, consult `.agents/skills/v2p-rescue/SKILL.md`; before release, consult `.agents/skills/v2p-release/SKILL.md`.
+Use an installed agent skill for each relevant phase; use the `using-agent-skills` router skill if present.
+Cursor skills belong in `.cursor/skills/<name>/SKILL.md` and rules in `.cursor/rules/*.mdc`.
+Keep the agent context minimal: reference workflows rather than pasting skill bodies into this always-on rule.
+A change is not done until the actual typecheck, tests, build and configured security checks pass.
+Never manufacture evidence or bypass a policy to produce a green status.

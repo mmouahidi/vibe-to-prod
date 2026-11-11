@@ -1,0 +1,10 @@
+{
+  "mode": "saas",
+  "blocking_checks": [
+    "typescript_strict",
+    "typecheck_script",
+    "test_script",
+    "build_script",
+    "ci_workflow"
+  ]
+}

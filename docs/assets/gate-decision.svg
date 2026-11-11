@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 410" role="img" aria-labelledby="title description">
+  <title id="title">How the quality gate decides</title>
+  <desc id="description">The gate collects structural policy blockers and executes declared npm scripts. It can also run an npm audit when requested. It exits zero when there are no policy blockers or failed tasks and exits one otherwise.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0 7 3.5 0 7Z" fill="#70d9e8"/>
+    </marker>
+  </defs>
+  <rect width="960" height="410" rx="20" fill="#081727"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="34" y="47" fill="#f1f7ff" font-size="27" font-weight="700">How the quality gate decides</text>
+    <text x="34" y="75" fill="#9fb5ca" font-size="16">The CLI combines policy findings with command results.</text>
+  </g>
+  <g fill="none" stroke="#70d9e8" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M458 167H499"/>
+    <path d="M712 222V252H246V275"/>
+    <path d="M712 252V275"/>
+  </g>
+  <g stroke-width="1">
+    <rect x="34" y="112" width="424" height="110" rx="12" fill="#11263c" stroke="#33506b"/>
+    <rect x="502" y="112" width="424" height="110" rx="12" fill="#11263c" stroke="#33506b"/>
+    <rect x="34" y="278" width="424" height="92" rx="12" fill="#103337" stroke="#438982"/>
+    <rect x="502" y="278" width="424" height="92" rx="12" fill="#352432" stroke="#9e5f75"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="16" fill="#c7d8e9">
+    <text x="55" y="145" fill="#8eecf5" font-size="19" font-weight="700">Evaluate structural policy</text>
+    <text x="55" y="175">Check strict TypeScript, required script declarations,<tspan x="55" dy="23">CI presence and configured rules.</tspan></text>
+    <text x="523" y="145" fill="#8eecf5" font-size="19" font-weight="700">Run declared npm scripts</text>
+    <text x="523" y="175">Typecheck, lint, test and build, in order.<tspan x="523" dy="23">Run npm audit when requested.</tspan></text>
+    <text x="55" y="312" fill="#a2f5d9" font-size="19" font-weight="700">Pass · exit 0</text>
+    <text x="55" y="343">Zero policy blockers and zero failed tasks.</text>
+    <text x="523" y="312" fill="#ffc1cd" font-size="19" font-weight="700">Blocked · exit 1</text>
+    <text x="523" y="343">One or more policy blockers or failed tasks.</text>
+  </g>
+</svg>

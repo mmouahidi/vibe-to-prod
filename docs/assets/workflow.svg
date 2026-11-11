@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 364" role="img" aria-labelledby="title description">
+  <title id="title">Vibe-to-Prod workflow</title>
+  <desc id="description">Install the runner in an existing Node app. Inspect the project's structure and create a feature spec. After implementing the change, run the gate locally or in CI and review the evidence before release.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0 7 3.5 0 7Z" fill="#70d9e8"/>
+    </marker>
+  </defs>
+  <rect width="960" height="364" rx="20" fill="#081727"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="34" y="47" fill="#f1f7ff" font-size="27" font-weight="700">From an existing app to release evidence</text>
+    <text x="34" y="75" fill="#9fb5ca" font-size="16">Install once, then use the runner as you plan and verify changes.</text>
+  </g>
+  <g fill="none" stroke="#70d9e8" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M191 183H214"/>
+    <path d="M375 183H398"/>
+    <path d="M559 183H582"/>
+    <path d="M743 183H766"/>
+  </g>
+  <g fill="#11263c" stroke="#33506b">
+    <rect x="34" y="116" width="156" height="134" rx="12"/>
+    <rect x="218" y="116" width="156" height="134" rx="12"/>
+    <rect x="402" y="116" width="156" height="134" rx="12"/>
+    <rect x="586" y="116" width="156" height="134" rx="12"/>
+    <rect x="770" y="116" width="156" height="134" rx="12" fill="#103337" stroke="#438982"/>
+  </g>
+  <g font-family="ui-monospace, Consolas, monospace" font-size="17" font-weight="700" fill="#8eecf5">
+    <text x="49" y="153">v2p init</text>
+    <text x="233" y="153">v2p doctor</text>
+    <text x="417" y="153">v2p spec</text>
+    <text x="601" y="153">v2p gate</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="15" fill="#c7d8e9">
+    <text x="785" y="153" fill="#a2f5d9" font-size="17" font-weight="700">Human review</text>
+    <text x="49" y="185">Add the runner,<tspan x="49" dy="22">policies and CI</tspan></text>
+    <text x="233" y="185">Inspect structure<tspan x="233" dy="22">and report gaps</tspan></text>
+    <text x="417" y="185">Define acceptance<tspan x="417" dy="22">criteria, then build</tspan><tspan x="417" dy="22">the feature</tspan></text>
+    <text x="601" y="185">Execute scripts<tspan x="601" dy="22">locally or in CI</tspan></text>
+    <text x="785" y="185">Review evidence<tspan x="785" dy="22">and decide whether</tspan><tspan x="785" dy="22">to release</tspan></text>
+    <text x="34" y="299" fill="#8eecf5" font-weight="700">Installed in your app</text>
+    <text x="34" y="326" fill="#9fb5ca">.v2p/ runner · project rules · policy config · GitHub Actions workflow · spec templates</text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "name": "vibe-to-prod",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent-native production guardrails for AI-built apps",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "bin": { "v2p": "./bin/v2p.mjs" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "doctor": "node bin/v2p.mjs doctor",
+    "check": "node --check bin/v2p.mjs && node --check src/audit.mjs && node --check src/init.mjs && node --check src/gate.mjs"
+  },
+  "license": "MIT",
+  "keywords": ["vibe-coding", "ai-agents", "production-readiness", "devtools", "agent-skills", "cursor", "typescript"]
+}
